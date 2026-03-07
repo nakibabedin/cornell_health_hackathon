@@ -1,3 +1,29 @@
+# === Project-specific ===
+
+# Data & uploads (user audio, raw CSVs, SQLite DB)
+data/uploads/
+data/raw/
+data/seeded/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Trained model artifacts (large binary files — regenerate with: python -m backend.train_model)
+backend/models/*.joblib
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local Claude plans
+plans/
+
+# === Python standard (from GitHub template) ===
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
